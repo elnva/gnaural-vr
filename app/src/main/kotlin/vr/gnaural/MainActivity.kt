@@ -64,7 +64,7 @@ private val PAPERS = listOf(
     Paper("Königsmark, Bergmann & Reeder 2021 · Cortex", "Ganzflicker: the eyes-open red and black flicker this app follows.", "https://research.edgehill.ac.uk/en/publications/ganzflicker-reveals-the-complex-relationship-between-visual-menta/"),
     Paper("Pearson et al. 2016 · eLife", "flicker visions peak near 11 Hz; flicker out of step between the eyes reads as double the rate.", "https://elifesciences.org/articles/17072"),
     Paper("Ingendoh, Posny & Heine 2023 · PLOS ONE", "review of binaural beats: 5 of 14 studies supported brain entrainment, 8 did not.", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10198548/"),
-    Paper("Bierman et al. 2011 · J. Biomedical Optics", "eyelids pass about 9% of red light and almost no green or blue: why the flash is red.", "https://www.lrc.rpi.edu/resources/newsroom/pdf/2011/eyelid8511.pdf"),
+    Paper("Bierman, Figueiro & Rea 2011 · J. Biomedical Optics", "eyelids let through far more red light than green or blue: why the flash is red.", "https://doi.org/10.1117/1.3593151"),
     Paper("Gnaural · Bret Logan · GPL", "the sound engine this app translates to Kotlin.", "https://gnaural.sourceforge.net/"),
 )
 

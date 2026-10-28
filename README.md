@@ -1,5 +1,8 @@
 # Gnaural VR
 
+<img width="1280" height="1792" alt="Start panel@2x" src="https://github.com/user-attachments/assets/e86a2efd-e7a2-4288-b6bc-ad389645df75" />
+
+
 A Meta Quest app that plays a Gnaural isochronic pulse through headphones while the whole field of view
 flashes red and black in step with it, for a number of minutes you choose. You use it with your eyes open.
 

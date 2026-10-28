@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The start panel: the warning first, then the menu, with the about screen one tap away. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panel">
+
+    <include layout="@layout/warning" />
+    <include layout="@layout/menu" android:visibility="gone" />
+    <include layout="@layout/about" android:visibility="gone" />
+</FrameLayout>

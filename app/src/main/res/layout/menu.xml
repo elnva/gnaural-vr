@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The main menu: one of the three screens start.xml swaps between. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="36dp"
+    android:paddingTop="36dp"
+    android:paddingEnd="36dp"
+    android:paddingBottom="32dp">
+
+    <LinearLayout style="@style/Row" android:gravity="top">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/unbounded_extrabold"
+                android:letterSpacing="-0.02"
+                android:text="@string/wordmark"
+                android:textColor="@color/text"
+                android:textSize="40sp" />
+
+            <TextView
+                style="@style/Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/how_to"
+                android:textColor="@color/muted" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chip"
+            android:drawableStart="@drawable/dot"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/space_grotesk_bold"
+            android:paddingStart="14dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="14dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/text"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/open_about"
+            style="@style/SmallButton"
+            android:layout_marginTop="8dp"
+            android:text="@string/about" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        style="@style/Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/pick_a_vibe" />
+
+    <LinearLayout
+        android:id="@+id/modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:id="@+id/mode_note"
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="44dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout style="@style/Row">
+            <TextView style="@style/Label" android:labelFor="@id/beat" android:text="@string/beat" />
+            <TextView android:id="@+id/beat_value" style="@style/Value" />
+        </LinearLayout>
+        <SeekBar android:id="@+id/beat" style="@style/Slider" android:max="79" />
+
+        <LinearLayout style="@style/Row" android:layout_marginTop="12dp">
+            <TextView style="@style/Label" android:labelFor="@id/base" android:text="@string/base" />
+            <TextView android:id="@+id/base_value" style="@style/Value" />
+        </LinearLayout>
+        <SeekBar android:id="@+id/base" style="@style/Slider" android:max="96" />
+
+        <LinearLayout style="@style/Row" android:layout_marginTop="12dp">
+            <TextView style="@style/Label" android:labelFor="@id/minutes" android:text="@string/minutes" />
+            <TextView android:id="@+id/minutes_value" style="@style/Value" />
+        </LinearLayout>
+        <SeekBar android:id="@+id/minutes" style="@style/Slider" android:max="59" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/sound_beeps" style="@style/Segment" android:layout_marginEnd="10dp" android:text="@string/sound_beeps" />
+        <TextView android:id="@+id/sound_binaural" style="@style/Segment" android:text="@string/sound_binaural" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <LinearLayout android:id="@+id/flash" style="@style/TogglePill" android:layout_marginEnd="10dp">
+            <TextView style="@style/TogglePillText" android:text="@string/flash" />
+            <View style="@style/ToggleKnob" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/alternate" style="@style/TogglePill">
+            <TextView style="@style/TogglePillText" android:text="@string/alternate" />
+            <View style="@style/ToggleKnob" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/big_pill"
+        android:fontFamily="@font/unbounded_extrabold"
+        android:stateListAnimator="@null"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/ground"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView style="@style/HintChip" android:text="@string/hint_pulse" />
+        <TextView style="@style/HintChip" android:text="@string/hint_pitch" />
+        <TextView style="@style/HintChip" android:text="@string/hint_panel" />
+        <TextView style="@style/HintChip" android:text="@string/hint_stop" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/Body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/warning"
+        android:textColor="@color/warning"
+        android:textSize="13sp" />
+</LinearLayout>

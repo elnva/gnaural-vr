@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The panel A brings up during a session: what is playing now and how to change it. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/panel"
+    android:orientation="vertical"
+    android:paddingStart="36dp"
+    android:paddingTop="32dp"
+    android:paddingEnd="36dp"
+    android:paddingBottom="32dp">
+
+    <LinearLayout style="@style/Row" android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/live"
+            style="@style/Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/dot"
+            android:drawablePadding="10dp"
+            android:textSize="15sp" />
+
+        <TextView android:id="@+id/time_left" style="@style/Value" android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/big_pill_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0" android:text="@string/beat" android:textAllCaps="false" android:textColor="@color/ground" android:textSize="15sp" />
+            <TextView android:id="@+id/live_beat" style="@style/BigNumber" android:layout_marginTop="8dp" android:textColor="@color/ground" />
+            <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:fontFamily="@font/space_grotesk_medium" android:text="@string/step_pulse" android:textColor="@color/ground" android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView style="@style/Caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:letterSpacing="0" android:text="@string/base" android:textAllCaps="false" android:textSize="15sp" />
+            <TextView android:id="@+id/live_base" style="@style/BigNumber" android:layout_marginTop="8dp" android:textColor="@color/text" />
+            <TextView style="@style/Body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:fontFamily="@font/space_grotesk_medium" android:text="@string/step_pitch" android:textColor="@color/muted" android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="22dp"
+        android:max="1000"
+        android:progressDrawable="@drawable/progress" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hide"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/outline_pill"
+            android:fontFamily="@font/space_grotesk_bold"
+            android:stateListAnimator="@null"
+            android:text="@string/hide_panel"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:background="@drawable/big_pill"
+            android:backgroundTint="@color/flash"
+            android:fontFamily="@font/unbounded_extrabold"
+            android:stateListAnimator="@null"
+            android:text="@string/stop_session"
+            android:textAllCaps="false"
+            android:textColor="@color/ground"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

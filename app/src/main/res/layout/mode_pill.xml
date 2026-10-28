@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One "pick a vibe" pill; MainActivity.bind inflates one per Mode. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="92dp"
+    android:layout_weight="1"
+    android:background="@drawable/mode_pill"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/hz"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/unbounded_extrabold"
+        android:textColor="@color/on_pill"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/space_grotesk_bold"
+        android:textColor="@color/on_pill"
+        android:textSize="14sp" />
+</LinearLayout>

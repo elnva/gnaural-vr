@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wordmark">gnaural<font fgcolor="#FFD4FF3A">.</font>vr</string>
+    <string name="how_to">eyes open · headphones on · lights off</string>
+    <string name="pick_a_vibe">pick a vibe</string>
+
+    <string name="mode_visuals">visuals</string>
+    <string name="mode_meditate">meditate</string>
+    <string name="mode_dream">dream</string>
+    <string name="mode_focus">focus</string>
+    <string name="mode_sleep">sleep</string>
+    <string name="note_visuals">alpha, 10 Hz. the strongest patterns and colours in flicker studies.</string>
+    <string name="note_meditate">theta, 6 Hz. the rhythm EEG shows in deep meditation.</string>
+    <string name="note_dream">theta, 4 Hz. the drowsy, dreamy edge of falling asleep.</string>
+    <string name="note_focus">low beta, 14 Hz. alert attention. fast flicker: stop if it feels harsh.</string>
+    <string name="note_sleep">delta, 2 Hz. deep sleep. sound only, because light keeps you up.</string>
+    <string name="note_custom">custom mix. your sliders, your rules.</string>
+    <string name="custom">custom</string>
+
+    <string name="beat">pulse + flash</string>
+    <string name="base">tone pitch</string>
+    <string name="minutes">length</string>
+    <string name="hz">%s Hz</string>
+    <string name="min">%d min</string>
+    <string name="sound_beeps">beeps</string>
+    <string name="sound_binaural">binaural waves</string>
+    <string name="flash">red flash</string>
+    <string name="alternate">L · R crossed</string>
+    <string name="start">start ▸</string>
+    <string name="stop">stop ■</string>
+
+    <string name="hint_pulse">R stick ↕ pulse</string>
+    <string name="hint_pitch">L stick ↕ pitch</string>
+    <string name="hint_panel"><b>A</b> panel</string>
+    <string name="hint_stop"><b>B</b> stop</string>
+
+    <string name="live">live · %s</string>
+    <string name="left">%d:%02d left</string>
+    <string name="step_pulse">R stick ↕ ±0.5</string>
+    <string name="step_pitch">L stick ↕ ±10</string>
+    <string name="hide_panel">A · hide panel</string>
+    <string name="stop_session">B · stop</string>
+
+    <string name="warning_title">before you start</string>
+    <string name="warning_intro">this app flashes red light across your whole view, from 0.5 to 40 times a second, while it plays pulsing sound.</string>
+    <string name="warning_list">• a small number of people have seizures from flashing light, even with no history of them.\n• don\'t use it if you have epilepsy, have ever had a seizure, or a doctor told you to avoid flashing light.\n• not for anyone under 18.\n• don\'t use it when tired, unwell, or after alcohol or drugs.\n• sit down first: you won\'t see the room.</string>
+    <string name="warning_stop">stop at once if you feel dizzy, twitch, lose track of where you are, or feel unwell: press B or the Meta button. rest before you drive.</string>
+    <string name="accept">i understand, continue</string>
+    <string name="exit">exit</string>
+
+    <string name="about">about ⓘ</string>
+    <string name="about_title">the science</string>
+    <string name="about_intro">what this app is built on. tap a paper to open it in the browser.</string>
+    <string name="back">back</string>
+
+    <!-- Wording follows Meta's flashing-images warning (oculus.com/legal/horizon-flashing-images-warning). -->
+    <string name="warning">⚠ flashing light. it can trigger seizures, even in people with no history of them. epilepsy? ask a doctor first. feel dizzy or twitchy: press B or the Meta button.</string>
+</resources>

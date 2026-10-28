@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A mode pill: lime fill when it is the chosen mode. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape><solid android:color="@color/accent" /><stroke android:width="2dp" android:color="@color/accent" /><corners android:radius="20dp" /></shape>
+    </item>
+    <item>
+        <shape><solid android:color="@color/surface" /><stroke android:width="2dp" android:color="@color/line" /><corners android:radius="20dp" /></shape>
+    </item>
+</selector>

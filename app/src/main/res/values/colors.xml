@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From the Gnaural VR panel design (Claude Design canvas, 2026-10-28). -->
+    <color name="ground">#0B0B0F</color>
+    <color name="surface">#15151B</color>
+    <color name="raised">#1A1A22</color>
+    <color name="line">#2A2A34</color>
+    <color name="text">#F4F4F6</color>
+    <color name="muted">#A6A6B2</color>
+    <color name="soft">#D2D2DA</color>
+    <color name="accent">#D4FF3A</color>
+    <color name="flash">#FF3B30</color>
+    <color name="warning">#FFD54F</color>
+</resources>

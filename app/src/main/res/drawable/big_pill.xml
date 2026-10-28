@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Start is lime; while a session runs the same button is the red Stop. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true"><shape><solid android:color="@color/flash" /><corners android:radius="999dp" /></shape></item>
+    <item><shape><solid android:color="@color/accent" /><corners android:radius="999dp" /></shape></item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- An on/off pill: a lime outline when on. "activated" is the on state. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape><solid android:color="@color/raised" /><stroke android:width="2dp" android:color="@color/accent" /><corners android:radius="999dp" /></shape>
+    </item>
+    <item>
+        <shape><solid android:color="@color/surface" /><stroke android:width="2dp" android:color="@color/line" /><corners android:radius="999dp" /></shape>
+    </item>
+</selector>
